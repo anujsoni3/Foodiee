@@ -1,0 +1,72 @@
+
+  body {
+    font-family: "Madimi One", sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #ff724c;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2a2c41;
+  }
+
+  .container {
+    font-family: "Madimi One", sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .service {
+    font-family: "Madimi One", sans-serif;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .service h2 {
+    font-family: "Madimi One", sans-serif;
+    margin-top: 0;
+  }
+
+  .service p {
+    
+    font-family: "Madimi One", sans-serif;
+    margin-bottom: 0;
+  }
+
+  .service:nth-child(even) {
+    font-family: "Madimi One", sans-serif;
+    background-color: #fdbf50;
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+
+    .service {
+      padding: 10px;
+    }
+  }
+.para{
+    font-family: "Madimi One", sans-serif;
+    font-size: 25px;
+}
+
+.traffic{
+    font-size: 35px;
+    color: #fdbf50;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}

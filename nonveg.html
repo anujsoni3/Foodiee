@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodiEE Menu</title>
+    <link rel="stylesheet" href="italian.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- <IMG src="logo.jpg" class="logo"></IMG>
+    <h1>"Savor the carnivorous delights of our menu, where succulent meats and bold flavors unite to tantalize your taste buds and satisfy your cravings. Indulge in a carnivore's paradise, where every dish promises a journey of mouthwatering satisfaction."
+
+
+
+
+
+    </h1> -->
+    <h1>NON-VEG MENU</h1>
+    <div class="food">
+    <div class="food-item">
+        <img src="food14.jpg" alt="Food 1">
+        <h2>Butter Chicken</h2>
+        <p><i>Indulge in our tantalizing Butter Chicken, where succulent pieces of marinated chicken swim in a creamy, aromatic tomato-based sauce, kissed with the richness of butter. Each bite is a symphony of flavors, a true culinary delight that will leave you craving for more. Experience the essence of Indian cuisine perfected in every savory morsel.</i></p>
+        <br>
+        <p><b>Price: Rs 345/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Butter Chicken', 345, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food24.jpg" alt="Food 1">
+        <h2>Chicken Tikka Masala</h2>
+        <p><i>Indulge in a symphony of flavors with our Chicken Tikka Masala: succulent grilled chicken enveloped in a velvety tomato cream sauce, kissed by aromatic Indian spices. A culinary masterpiece that tantalizes the taste buds and leaves you craving for more. Experience the essence of India in every savory bite.</i></p>
+        <br><br>
+        <p><b>Price: Rs 320/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('chicken tikka masala', 320, 'quantity1')">Add to Cart</button>
+    </div>
+    <div class="food-item">
+        <img src="food34.jpg" alt="Food 1">
+        <h2>Rogan Josh</h2>
+        <p><i>Savor the exquisite flavors of tender lamb simmered in a rich and aromatic blend of Kashmiri spices, creating our signature Rogan Josh. A culinary masterpiece from the valleys of Kashmir, each bite is a journey through tradition and taste. Indulge in the allure of this timeless dish, perfectly balanced and utterly unforgettable.</i></p>
+        <br>
+        <p><b>Price: Rs 390/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Rogan Josh', 390, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food44.jpg" alt="Food 1">
+        <h2>Biryani</h2>
+        <p><i>Savor the aromatic allure of our signature Biryani, where fragrant basmati rice embraces succulent pieces of tender meat, harmonizing with an exquisite blend of spices to transport your taste buds on a journey of unparalleled delight</i></p>
+        <br><br><br><br>
+        <p><b>Price: Rs 199/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Biryani', 199, 'quantity1')">Add to Cart</button>
+    </div>
+    
+    <div class="food-item">
+        <img src="food54.jpg" alt="Food 1">
+        <h2>Osso Buco</h2>
+        <p><i> Indulge in the timeless elegance of our Osso Buco an italian speciality: tender veal shanks braised to perfection, infused with the rich flavors of red wine, aromatic vegetables, and fragrant herbs. A symphony of taste awaits, promising a culinary journey steeped in tradition and refinement.</i></p>
+        <br>
+        <p><b>Price: Rs 200/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Osso Buco', 200, 'quantity1')">Add to Cart</button>
+    </div>
+    
+    <div class="food-item">
+        <img src="food64.jpg" alt="Food 1">
+        <h2> Sushi</h2>
+        <p><i> 
+            Savor the sublime elegance of our sushi, where each delicate slice of fresh fish dances atop perfectly seasoned rice, a symphony of flavors and textures awaits with every bite, promising a culinary journey that delights the senses.</i></p>
+        <br><br>
+        <p><b>Price: Rs 219/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Sushi', 219, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food74.jpg" alt="Food 1">
+        <h2> Kung Pao Chicken</h2>
+        <p><i> 
+            Indulge in the irresistible harmony of tender chicken, crunchy peanuts, and vibrant vegetables, all tossed in a fiery symphony of spicy Kung Pao sauce. Our Kung Pao Chicken promises a tantalizing adventure for your taste buds, delivering a perfect balance of heat and flavor in every savory bite.
+</i></p>
+        <br><br>
+        <p><b>Price: Rs 240/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Kung Pao Chicken', 240, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food84.jpg" alt="Food 1">
+        <h2>Chicken Chettinad</h2>
+        <p><i> 
+            Indulge in the tantalizing flavors of our Chicken Chettinad, a South Indian delight bursting with aromatic spices and rich, velvety gravy. Savory and satisfying, each bite is a culinary journey through the vibrant streets of Chettinad. Experience the essence of tradition and taste in every mouthful.</i></p>
+        <br><br><br>
+        <p><b>Price: Rs 275/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Chicken Chettinad', 275, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food94.jpg" alt="Food 1">
+        <h2> Fish Curry</h2>
+        <p><i> 
+            Savor the vibrant flavors of our Fish Curry, where tender fish meets a symphony of spices simmered in a luscious coconut-tomato gravy. Dive into a culinary journey that balances tangy, savory, and aromatic notes, delivering a taste of coastal indulgence in every bite.</i></p>
+        <br><br><br>
+        <p><b>Price: Rs 349/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Fish Curry', 349, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food104.jpg" alt="Food 1">
+        <h2> Paella</h2>
+        <p><i> 
+            Indulge in the rich tapestry of flavors with our signature Paella - a tantalizing Spanish symphony of saffron-infused rice, succulent seafood, and aromatic spices, meticulously crafted to transport your taste buds to the sunny shores of Valencia.</i></p>
+        <br>
+        <p><b>Price: Rs 299/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Paella', 299, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food114.jpg" alt="Food 1">
+        <h2>Mutton Curry</h2>
+        <p><i> 
+            Savor the rich and aromatic embrace of our Mutton Curry, where tender pieces of succulent mutton mingle with a symphony of spices, creating a tantalizing harmony that dances on your palate. Experience the essence of traditional Indian flavors, lovingly crafted to perfection, in every exquisite bite.</i></p>
+        <br>
+       
+        <p><b>Price: Rs 299/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Mutton Curry', 299, 'quantity1')">Add to Cart</button>
+    </div>
+</div>
+    
+    <script src="italian1.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <div class="login-container">
+        <form name="createAccountForm" action="create_account.php" method="POST" onsubmit="return validateCreateAccountForm()">
+
+            <p class="createaccount">Create Account</p>
+            <label  for="name"><p class="ab">Username:</p></label>
+            <input type="text" name="username" ID="username" class="username" placeholder="Username" required>
+            <label  for="name"><p class="ab">Email</p></label>
+            <input type="email" name="email" id="email" class="email" placeholder="Email" required>
+            <label  for="name"><p class="ab">Password:</p></label>
+            <input type="password" name="password" id="password" class="password" placeholder="Password" required><br><br><br>
+            <div class="wrap"><button type="submit" class="button">Create Account</button></div> <br>
+
+            <form name="createAccountForm" action="registrationn.php" method="POST" onsubmit="return validateCreateAccountForm()">
+        <div class="options">
+            <a href="login.html">Back to Login</a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script>
+        
+
+        document.querySelector("form[name='createAccountForm']").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Assuming you want to navigate to api.html after form submission
+            window.location.href = "Menu.html";
+        });
+    </script>
+
+</body>
+</html>

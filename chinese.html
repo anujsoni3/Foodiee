@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Menu</title>
+    <link rel="stylesheet" href="italian.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- <IMG src="logo.jpg" class="logo"></IMG> -->
+    <!-- <h1>Welcome to our Chinese culinary haven, where every dish embodies the essence of centuries-old tradition and vibrant flavors. Explore a symphony of tastes, from the fiery depths of Sichuan to the delicate nuances of Cantonese cuisine, promising an unforgettable dining experience. Join us on a journey through the heart of China, where each bite is a celebration of authenticity, passion, and culinary excellence."
+
+    </h1> -->
+    <h1>CHINESE MENU</h1>
+    <div class="food">
+    <div class="food-item">
+        <img src="food11.jpg" alt="Food 1">
+        <h2>Veg Noodles</h2>
+        <p><i>Indulge in the savory allure of veg noodles, where each strand is a culinary canvas, painted with vibrant veggies and seasoned with a symphony of spices, promising a tantalizing journey for your taste buds!</i></p>
+        <br><br><br><br>
+        <p><b>Price: Rs 159/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br>
+        
+        <button onclick="addToCart('Veg Noodles', 159, 'quantity1')">Add to Cart</button><br>
+    </div>
+
+    <div class="food-item">
+        <img src="food61.webp" alt="Food 1">
+        <h2>Manchurian</h2>
+        <p><i> Savor the irresistible crunch and burst of flavors in every bite of Manchurian, where crispy vegetable dumplings are bathed in a luscious, tangy sauce, creating a harmonious blend of textures and tastes that dance on your palate.</i></p>
+        <br>
+        <p><b>Price: Rs 189/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Manchurian', 189, 'quantity1')">Add to Cart</button>
+    </div>
+    <div class="food-item">
+        <img src="food21.jpg" alt="Food 1">
+        <h2>Hakka Noodles</h2>
+        <p><i> Embrace the aromatic swirls of Hakka noodles, a symphony of wok-tossed strands delicately infused with savory sauces, crisp vegetables, and hints of garlic, promising a culinary voyage that's both comforting and adventurous.</i></p>
+        <br><br><br><br>
+        <p><b>Price: Rs 169/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Hakka Noodles', 169, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food31.jpeg" alt="Food 1">
+        <h2>Spring Rolls</h2>
+        <p><i>A crispy embrace of delicate pastry filled with a vibrant medley of vegetables, fragrant herbs, and perhaps a hint of protein, offering a tantalizing bite-sized journey into the heart of Asian culinary tradition.</i></p>
+        <br><br>
+        <p><b>Price: Rs 149/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Spring Rolls', 149, 'quantity1')">Add to Cart</button>
+    </div>
+    
+    <div class="food-item">
+        <img src="food41.webp" alt="Food 1">
+        <h2>Panner Manchurian</h2>
+        <p><i> Savor the succulent perfection of Paneer Manchurian, where soft cubes of paneer are bathed in a spicy, tangy sauce, creating a delectable fusion of Indian and Chinese flavors that will leave your taste buds craving for more..</i></p>
+        <br>
+        <p><b>Price: Rs 199/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Paneer Manchurian', 199, 'quantity1')">Add to Cart</button>
+    </div>
+    
+    <div class="food-item">
+        <img src="food51.webp" alt="Food 1">
+        <h2> Fried Rice</h2>
+        <p><i> 
+            Experience the comforting embrace of fried rice, each grain infused with the savory essence of stir-fried vegetables, eggs, and perhaps a hint of protein, delivering a symphony of flavors in every fragrant, satisfying bite.</i></p>
+        <br>
+        <p><b>Price: Rs 179/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Fried Rice', 179, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food71.webp" alt="Food 1">
+        <h2>Mapo Tofu</h2>
+        <p><i> 
+            Delve into the fiery depths of Mapo Tofu, where tender tofu cubes swim in a bold, spicy sauce infused with aromatic Sichuan peppercorns and savory minced meat, offering a thrilling journey for those who dare to indulge in its flavorful embrace.</i></p>
+        <br><br><br>
+        <p><b>Price: Rs 269/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Mapo Tofu', 269, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food81.jpg" alt="Food 1">
+        <h2> Sichuan Hot Pot</h2>
+        <p><i> 
+            Embark on a culinary adventure with Sichuan Hot Pot, where an array of fresh ingredients including thinly sliced meats, vibrant vegetables, and delicate tofu are cooked to perfection in a simmering, spicy broth infused with numbing Sichuan peppercorns, creating a dining experience that's as exhilarating as it is delicious.</i></p>
+        <br><br>
+        <p><b>Price: Rs 319/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Sichuan Hot Pot', 319, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food91.avif" alt="Food 1">
+        <h2> Momos</h2>
+        <p><i> 
+            Delight in the exquisite flavors of Momos, tender dumplings filled with a succulent mix of vegetables or meat, steamed to perfection and served with a tantalizing dipping sauce, offering a taste of Himalayan comfort in every bite.</i></p>
+        <br>
+        
+        <p><b>Price: Rs 149/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Momos', 149, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food101.jpg" alt="Food 1">
+        <h2> Chicken Momos</h2>
+        <p><i> 
+            Savor the succulent essence of Chicken Momos, where tender dough envelopes a delectable filling of seasoned minced chicken, steamed to perfection and served with a zesty dipping sauce, offering a tantalizing blend of flavors and textures in each delightful bite.!</i></p>
+        <br>
+        
+        <p><b>Price: Rs 159/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Chicken Momos', 159, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food111.webp" alt="Food 1">
+        <h2> Platter</h2>
+        <p><i> 
+            Indulge in a tantalizing platter brimming with the vibrant flavors and textures of Chicken Momos, crispy Vegetable Spring Rolls, aromatic Hakka Noodles, succulent Paneer Manchurian, and the communal joy of Sichuan Hot Pot, promising a culinary journey to remember.</i></p>
+        <br><br>
+        
+        <p><b>Price: Rs 499/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Platter', 499, 'quantity1')">Add to Cart</button>
+    </div>
+</div>
+    
+
+    <script src="italian1.js">
+    </script>
+</body>
+</html>

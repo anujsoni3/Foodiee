@@ -1,0 +1,183 @@
+body {
+    /* background-image: url('th.avif'); */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #012a4a;
+    font-family: "Rowdies", sans-serif;
+
+    /* display: grid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  height: 100vh;
+  place-items: center; */
+}
+
+h1 {
+    font-family: "Rowdies", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 65px;
+}
+h1::before {
+    background: hsl(45 100% 70%);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  h1:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out; 
+    color: #ff724c;
+    text-shadow: 3px 3px #2a2c41;
+  }
+h2 {
+    font-family: "Rowdies", sans-serif;
+    text-align: center;
+    color: #45a049;
+
+    background-image: linear-gradient(
+    to right,
+    #012a4a,
+    #012a4a, 50%,
+    #012a4a 50%
+  );
+  background-size: 100% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+h2:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  h2:hover {
+    background-position: 0;
+    transform: scale(1.05);
+   }
+   
+   h2:hover::before{
+     width: 100%;
+   }
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    /* Center horizontally */
+    width: 200px;
+    /* Adjust width as needed */
+}
+
+.food {
+    font-family: "Rowdies", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 25px;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+  }
+.food-item {
+    height: 5%;
+    width: 300px; 
+    background-color: #fdbf50;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px auto;
+    /* max-width: px; */
+    font-family: "Rowdies", sans-serif;
+}
+
+.food-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    -webkit-filter: brightness(50%);
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.food-item img:hover {
+    -webkit-filter: brightness(100%);
+    transform: scale(1.02);
+}
+
+.food-item h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.food-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #948c8c;
+}
+
+select {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid antiquewhite;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #45a049; 
+    /* font-family: "Rowdies", sans-serif;  */
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+

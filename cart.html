@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - FoodiEE</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <div class="container">
+    <div class="cartt">
+    <h1>Your Cart</h1>
+    <ul id="cart-items"></ul>
+    <div class="bill"><button onclick="generateBill()">Generate Bill</button></div>
+    <p id="total"></p>
+</div>
+</div>
+
+   
+
+    <script>
+    function loadCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const cartItemsElement = document.getElementById('cart-items');
+        cartItemsElement.innerHTML = ''; // Clear existing items
+
+        let total = 0;
+
+        cart.forEach((item, index) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${item.name} - Rs ${item.price} x ${item.quantity}`;
+            total += item.price * item.quantity;
+
+            // Add remove button to delete items from cart
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.onclick = () => removeItemFromCart(index);
+            listItem.appendChild(removeButton);
+
+            cartItemsElement.appendChild(listItem);
+        });
+
+        document.getElementById('total').textContent = `Total: Rs ${total}`;
+        
+    }
+
+    function removeItemFromCart(index) {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        cart.splice(index, 1); // Remove the item at the given index
+
+        localStorage.setItem('cart', JSON.stringify(cart)); // Update local storage
+        loadCart(); // Reload the cart to reflect changes
+    }
+
+    function generateBill() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        if (cart.length === 0) {
+            alert('Your cart is empty!');
+            return;
+        }
+
+        let billSummary = 'Bill Summary:\n';
+        let total = 0;
+
+        cart.forEach(item => {
+            const itemTotal = item.price * item.quantity;
+            billSummary += `${item.name}: Rs ${item.price} x ${item.quantity} = Rs ${itemTotal}\n`;
+            total += itemTotal;
+        });
+
+        billSummary += `\nTotal: Rs ${total}`;
+
+        // Save the total amount in local storage
+        localStorage.setItem('totalAmount', total);
+
+        // Show the bill summary in an alert
+        alert(billSummary);
+
+        // Redirect to the payment page after the alert is dismissed
+        window.location.href = 'payment.html';
+    }
+
+    loadCart(); // Load the cart when the page is loaded
+    </script>
+</body>
+</html>
+<!-- 
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
+if (isset($_POST["submit"])) {
+    $email = "soni3anuj@gmail.com";
+
+    // Validate email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format";
+        exit;
+    }
+
+    // Sanitize input
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+    // Load email credentials from environment variables or a configuration file
+    $mail = new PHPMailer(true);
+    try {
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'soni3anuj@gmail.com'; // Use getenv('GMAIL_USERNAME') to get email from environment variable
+        $mail->Password = 'rlzf adxq noru pplk'; // Use getenv('GMAIL_PASSWORD') to get password from environment variable
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port = 465;
+
+        $mail->setFrom($email, $name);
+        $mail->addAddress('pardhish@gmail.com', 'ardhish');
+
+        $mail->isHTML(true);    
+        $mail->Subject = 'FOODIEE BILL';
+        $mail->Body = "Mr. Ardhish, Your order have been placed for Rs. 580";
+
+        $mail->send();
+        echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
+?> -->

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="backimg"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <div class="login-container">
+        <form name="loginForm" method="POST" onsubmit="return validateLoginForm()">
+
+            <p class="createaccount">Login</p>
+            <label for="email"><p class="ab">Email:</p></label>
+            <input type="email" name="email" id="email" class="email" placeholder="Email" required>
+            <label for="password"><p class="ab">Password:</p></label>
+            <input type="password" id="password" name="password" class="password" placeholder="Password" required><br><br>
+           <div class="wrap"><button type="submit" class="button" onsubmit="return validateLoginForm()">Login</button></div> 
+        </form><br>
+        <div class="options">
+            <a href="create_account.html">Create Account</a>
+            <a href="forgot_password.html">Forgot Password?</a>
+        </div>
+    </div>
+    
+    <script>
+        // Function to validate login form
+        function validateLoginForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+    
+            // Basic email validation (check for '@' and '.')
+            if (!email.includes('@') || !email.includes('.')) {
+                alert("Invalid email format. Please enter a valid email address.");
+                return false; // Prevent form submission
+            }
+    
+            // Ensure password is at least 6 characters long
+            if (password.length < 6) {
+                alert("Password should contain at least 6 characters.");
+                return false; // Prevent form submission
+            }
+    
+            return true; // Allow form submission
+        }
+        </script>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    font-family: "Rowdies", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Light background for the page */
+}
+
+.container {
+    max-width: 600px; /* Keep the container at a reasonable width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+    background-color: white; /* White background for the container */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    font-family: "Rowdies", sans-serif;
+    text-align: center; /* Center-align the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+form {
+    font-family: "Rowdies", sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.payment-option {
+    margin-bottom: 15px; /* Space between payment options */
+}
+
+.card-details {
+    display: none; /* Hide card details initially */
+    margin-left: 20px; /* Indent card details */
+}
+
+input[type="text"] {
+    font-family: "Rowdies", sans-serif;
+    padding: 10px; /* Padding inside text input */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+}
+
+button {
+    font-family: "Rowdies", sans-serif;
+    background-color: #3498db; /* Blue button */
+    color: white; /* White text on button */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+    font-family: "Rowdies", sans-serif;
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.wallet-details{
+    padding-top: 15px;
+    /* padding-right: 30px; */
+    width: 55%;
+    padding-left: 0px;
+}

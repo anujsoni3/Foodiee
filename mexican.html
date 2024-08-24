@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodiEE Menu</title>
+    <link rel="stylesheet" href="italian.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- <IMG src="logo.jpg" class="logo"></IMG>
+    <h1>"Explore the vibrant flavors of Mexico with our tantalizing menu, where every bite is a fiesta for your taste buds!"
+    </h1> -->
+    <h1>MEXICAN MENU</h1>
+
+    <div class="food">
+    <div class="food-item">
+        <img src="food13.jpeg" alt="Food 1">
+        <h2>Tacos</h2>
+        <p><i>A tantalizing trio of textures—crisp shell, succulent filling, and vibrant toppings—uniting in a blissful burst of flavor. Each bite a journey through the vibrant streets of Mexico, where spice and zest dance in perfect harmony, leaving a lingering longing for just one more taste</i></p>
+        <br>
+        <p><b>Price: Rs 249/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Taco', 249, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food23.jpeg" alt="Food 1">
+        <h2>Burritos</h2>
+        <p><i> A handheld feast, where every fold of the flour tortilla unveils a savory mosaic of flavors—tender meats, hearty beans, creamy cheese, and zesty salsa—melded together in a symphony of indulgence. With each bite, a journey unfolds, transporting taste buds to the sun-kissed landscapes of Mexico, where culinary mastery meets pure satisfaction.</i></p>
+        <br>
+        <p><b>Price: Rs 267/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Burritos', 267, 'quantity1')">Add to Cart</button>
+    </div>
+    <div class="food-item">
+        <img src="food33.jpeg" alt="Food 1">
+        <h2>Enchiladas</h2>
+        <p><i> Layers of corn tortillas enveloping a melody of tender meats or creamy cheeses, bathed in a velvety blanket of chili sauce and crowned with a flourish of fresh toppings. A tantalizing embrace of traditional flavors, each bite tells a story of culinary heritage and culinary artistry, inviting diners on a journey to savor the essence of Mexico.</i></p>
+        <br>
+        <p><b>Price: Rs 250/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Enchiladas', 250, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food43.jpeg" alt="Food 1">
+        <h2>Chiles Rellenos</h2>
+        <p><i>A tantalizing fusion of fire-roasted poblanos and creamy cheese, enveloped in a golden embrace of egg batter, offering a symphony of smoky, spicy, and savory sensations. Each bite a celebration of tradition and flavor, igniting the palate with every irresistible mouthful.</i></p>
+        <br>
+        <p><b>Price: Rs 199/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Chiles Rellenos', 199, 'quantity1')">Add to Cart</button>
+    </div>
+    
+    <div class="food-item">
+        <img src="food53.jpeg" alt="Food 1">
+        <h2>Tamales</h2>
+        <p><i> Handcrafted bundles of delight, each bite unveils a symphony of masa infused with tender meats, cheeses, and aromatic spices—a culinary treasure wrapped in a corn husk. Taste the tradition of Mexico with every savory mouthful, where heritage meets heavenly flavor in perfect harmony.</i></p>
+        <br>
+        <p><b>Price: Rs 169/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Tamales', 169, 'quantity1')">Add to Cart</button>
+    </div>
+    
+    <div class="food-item">
+        <img src="food63.jpeg" alt="Food 1">
+        <h2> Pozole</h2>
+        <p><i> 
+            A soul-warming bowl of tradition and flavor, where tender hominy kernels mingle with succulent meats in a rich broth, infused with the warmth of chili peppers and fragrant spices. A taste of Mexico's heart and heritage, each spoonful a celebration of comfort and culinary artistry</i></p>
+        <br><br><br>
+        <p><b>Price: Rs 200/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>  
+        </select>
+        <button onclick="addToCart('Pozole', 200, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food73.jpeg" alt="Food 1">
+        <h2> Mole</h2>
+        <p><i> 
+            A velvety symphony of flavors, where the richness of chocolate meets the warmth of chili peppers, creating a tantalizing tapestry for the palate. Each spoonful a journey through Mexico's culinary heritage, a perfect balance of tradition and innovation that leaves a lasting impression of culinary bliss.</i></p>
+        <br><br>
+        <p><b>Price: Rs 237/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Mole', 237, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food83.jpeg" alt="Food 1">
+        <h2> Quesadillas</h2>
+        <p><i> 
+            Crispy perfection embracing a melty core of cheese, kissed by the warmth of tradition and elevated with modern flair. Each bite a celebration of simplicity and complexity, where the harmony of flavors transports you to the heart of Mexico's culinary soul.</i></p>
+        <br><br><br><br><br>
+        <p><b>Price: Rs 275/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Quesadillas', 275, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food93.jpeg" alt="Food 1">
+        <h2> Tostadas</h2>
+        <p><i> 
+            Crispy corn canvases adorned with layers of savory delights—creamy beans, tender meats, crisp lettuce, and tangy salsa—creating a tantalizing symphony of flavors and textures. Each bite a culinary adventure, where the crunch of the tortilla meets the explosion of vibrant ingredients, leaving taste buds singing with delight!</i></p>
+        <br>
+        <p><b>Price: Rs 149/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('M Tostadas', 149, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food103.jpeg" alt="Food 1">
+        <h2> Guacamole</h2>
+        <p><i> 
+            Creamy avocado kissed with zesty lime, mingling with the vibrant notes of diced tomatoes, onions, and cilantro. A symphony of fresh flavors dancing on the palate, promising a tantalizing journey with every dip. Taste the essence of Mexico, where every scoop unveils a fiesta of deliciousness.</i></p>
+        <br>
+        <p><b>Price: Rs 179/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Guacamole', 179, 'quantity1')">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+        <img src="food113.jpeg" alt="Food 1">
+        <h2> Fajitas</h2>
+        <p><i> 
+            A sizzling sensation that tantalizes the senses with its aromatic blend of tender, marinated meats, caramelized peppers, and onions, all nestled in a warm tortilla. Each bite is a savory symphony, a celebration of flavors that transports you to the heart of Mexico's culinary heritage. Indulge in the fiery allure of fajitas, where every sizzle ignites a passion for bold and authentic cuisine.</i></p>
+        <br>
+       
+        <p><b>Price: Rs 299/_</b></p>
+        <select name="quantity" id="quantity1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+        </select>
+        <button onclick="addToCart('Fajitas', 299, 'quantity1')">Add to Cart</button>
+    </div>
+</div>
+    
+    <script src="italian1.js">
+    </script>
+</body>
+</html>

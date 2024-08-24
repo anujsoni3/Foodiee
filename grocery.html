@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="italian.css">
+</head>
+<body>
+    <!-- <img src="logo.jpg" class="logo"></img> -->
+    <!-- <h1>Welcome to Our Grocery Store</h1> -->
+    <h1>GROCERY</h1>
+    <div class="food">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <div class="food-item">
+            <img src="food17.jpg" alt="Food 1">
+            <h2>Apples</h2><br><br><br><br><br>
+            <p><b>Price: Rs 99/kg</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('Apple', 99, 'quantity1')">Add to Cart</button>
+        </div>
+    
+        <div class="food-item">
+            <img src="food27.jpeg" alt="Food 1">
+            <h2>orange</h2><br><br>
+            <br>
+            <p><b>Price: Rs 24/kg_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('orange', 249, 'quantity1')">Add to Cart</button>
+        </div>
+        <div class="food-item">
+            <img src="food37.jpeg" alt="Food 1">
+            <h2>rice</h2><br>
+            <br>
+            <p><b>Price: Rs 34/kg_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('rice', 45, 'quantity1')">Add to Cart</button>
+        </div>
+    
+        <div class="food-item">
+            <img src="food47.jpeg" alt="Food 1">
+            <h2>wheat bread</h2><br>
+            <br>
+            <p><b>Price: Rs 20/_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('wheat bread', 249, 'quantity1')">Add to Cart</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="food57.jpeg" alt="Food 1">
+            <h2>eggs</h2><br><br><br>
+            
+            <p><b>Price: Rs 10/_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                
+            </select>
+            <button onclick="addToCart('eggs', 49, 'quantity1')">Add to Cart</button>
+        </div>
+        
+        <div class="food-item">
+            <img src="lunchmeat.jpeg" alt="Food 1">
+            <h2>lunch meat</h2><br><br><br>
+            <p><i> 
+            
+            <p><b>Price: Rs 145/_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('lunch meat', 169, 'quantity1')">Add to Cart</button>
+        </div>
+    
+        <!-- <div class="food-item">
+            <img src="food77.jpeg" alt="Food 1">
+            <h2>butter</h2><br>
+            <p><i> 
+            <br><br><br><br><br><br><br>
+            <p><b>Price: Rs 700/kg_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('butter', 269, 'quantity1')">Add to Cart</button>
+        </div>
+    
+        <div class="food-item">
+            <img src="food87.jpeg" alt="Food 1">
+            <h2>milk</h2><br>
+            <p><i> 
+    
+            <br><br><br>
+            <p><b>Price: Rs 60/_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('milk', 119, 'quantity1')">Add to Cart</button>
+        </div>
+    
+        <div class="food-item">
+            <img src="food97.jpeg" alt="Food 1">
+            <h2> baking powder</h2><br>
+            <p><i> 
+            
+            <br><br>
+            <p><b>Price: Rs 249/_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('baking powder', 249, 'quantity1')">Add to Cart</button>
+        </div>
+    
+        <div class="food-item">
+            <img src="food107.jpg" alt="Food 1">
+            <h2> honey</h2><br>
+            <p><i> 
+                <br><br>
+            
+            
+            <p><b>Price: Rs 100/0.5kg</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('honey', 99, 'quantity1')">Add to Cart</button>
+        </div>
+    
+        <div class="food-item">
+            <img src="corn17.jpeg" alt="Food 1">
+            <h2> corn</h2><br>
+            <p><i> 
+            <br><br><br><br><br><br>
+            
+            <p><b>Price: Rs 80/kg_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('corn', 79, 'quantity1')">Add to Cart</button>
+        </div>
+    
+        <div class="food-item">
+            <img src="food127.jpeg" alt="Food 1">
+            <h2>berries</h2><br>
+            <p><i> 
+            <br><br><br><br><br><br><b></b>
+            
+            <p><b>Price: Rs 300/kg_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('berries', 379, 'quantity1')">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="food137.jpeg" alt="Food 1">
+            <h2>puff pastry</h2><br>
+            <p><i> 
+            <br><br><br><br><br><br><b></b>
+            
+            <p><b>Price: Rs 30/piece_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('puff pastry', 379, 'quantity1')">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="food147.jpeg" alt="Food 1">
+            <h2>mustard</h2><br>
+            <p><i> 
+            <br><br><br><br><br><br><b></b>
+            
+            <p><b>Price: Rs 50/kg_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('mustard', 379, 'quantity1')">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="food157.jpeg" alt="Food 1">
+            <h2>mayo</h2><br>
+            <p><i> 
+            <br><br><br><br><br><br><b></b>
+            
+            <p><b>Price: Rs 150/bottle_</b></p>
+            <select name="quantity" id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+            </select>
+            <button onclick="addToCart('mayo', 379, 'quantity1')">Add to Cart</button>
+        </div> -->
+        
+    </div>
+
+    <script src="italian1.js"></script>
+</body>
+</html>
